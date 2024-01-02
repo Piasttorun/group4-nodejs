@@ -1,4 +1,4 @@
-Hello everyone, and welcome to our presentation about how we deployed the NodeJS app using Microsoft Azure.
+
 
 First, we created our Azure Virtual Network which we made sure was located in the UK South region and we gave the address space of 10.0.0.0/16.
 As the NodeJS app has both an app and database we created two subnets, one for each vm.
