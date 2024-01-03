@@ -2,7 +2,7 @@
 
 ## Virtual Network
 
-First, we created our Azure Virtual Network which we made sure was located in the UK South region and we gave the address space of 10.0.0.0/16.
+First, we created our Azure Virtual Network within the UK South region with the address space of 10.0.0.0/16.
 As the NodeJS app has both an app and database we created two subnets, one for each vm.
 The app vm has an address space of 10.0.2.0/16. and the database vm has an address space of 10.0.3.0/16.
 
@@ -10,7 +10,7 @@ The app vm has an address space of 10.0.2.0/16. and the database vm has an addre
 
 We then moved onto creating out virtual machines. We created the database virtual machine first, so that it would be ready to use once we started to create and test the app vm.
 
-We made sure the database vm was located in the UK south region, used the Ubuntu 18.04 LTS image and was a size equivalent to the t2.micro in AWS. We chose the Standard B1s size as it seemed to be the most similar. We then allowed port 20 for SSH and port 27017 which is the default port for MongoDB.
+The database vm was located in the UK south region, used the Ubuntu 18.04 LTS image and was the Standard B1s size. We then allowed port 20 for SSH and port 27017, the default port for MongoDB.
 
 Once we SSH’d in we upgraded and updated and then installed MongoDB version 3.2.x as requested. We then configured MongoDB to allow access from any IP address so we could test the database. We then restarted, started and enabled MongoDB.
 
@@ -107,4 +107,4 @@ echo "The app is running"
 
 ## Scripted and User Data Virtual Machines 
 
-We then created scripts from the manual commands we had used, and created fresh VM’s to test them. Once we knew the scripts worked, we then created new VM’s that used them as user data.
+We then created scripts from the manual commands we had used, and created fresh VM’s to test them, and then created new VM’s that used them as user data.
