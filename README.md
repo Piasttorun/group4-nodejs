@@ -108,3 +108,15 @@ echo "The app is running"
 ## Scripted and User Data Virtual Machines 
 
 We then created scripts from the manual commands we had used, and created fresh VM’s to test them, and then created new VM’s that used them as user data.
+
+## Feedback
+
+- Increase the number of slides so that those watching can follow what you are saying with more visual cues.
+- Freya: slow down
+- Uyi: better flow
+- A live demonstration, at least show the application running.
+- More screenshots
+- Every choice is an intentional choice
+- Matching slides
+- don't answer question swith a 'no'... elaborate further
+
